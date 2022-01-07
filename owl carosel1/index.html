@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/owlcarousal.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+  </head>
+
+  <body>
+
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="images/image1.jpg" alt=""></div>
+      <div class="item"><img src="images/image1.jpg" alt=""></div>
+      <div class="item"><img src="images/image1.jpg" alt=""></div>
+      <div class="item"><img src="images/image1.jpg" alt=""></div>
+      <div class="item"><img src="images/image1.jpg" alt=""></div>
+      <div class="item"><img src="images/image1.jpg" alt=""></div>
+      <div class="item"><img src="images/image1.jpg" alt=""></div>
+      <div class="item"><img src="images/image1.jpg" alt=""></div>
+      <div class="item"><img src="images/image1.jpg" alt=""></div>
+   
+  </div>
+
+
+
+    <script src="/jquary/jquery.min.js"></script>
+    <script src="/jquary/owl.carousel.min.js"></script>
+
+    <script type="text/javascript">
+    var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+  </body>
+</html>
